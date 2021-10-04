@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>repl.it</title>
+  </head>
+  
+  <body>
+    <script>
+      var tblNombre = []
+      var joue = "oui"
+      var i = 0
+      var somme = 0
+      var moyenne = 0
 
+      while (joue == "oui") {
+       nombre = parseInt(prompt("Entrer un nombre: "));
+       tblNombre.unshift(nombre);
+       joue = prompt("Voulez vous entrer un autre nombre? (oui/non): ")
+        }
+
+       var max = tblNombre[0]
+       for (i = 0; tblNombre.length > i; i++) {
+       if (tblNombre[i] >= max) {
+       max = tblNombre[i]
+       }
+       }
+       var min = tblNombre[0]
+       for (i = 0; tblNombre.length > i; i++) {
+       if (tblNombre[i] <= min) {
+       min = tblNombre[i]
+       }
+       }
+       for (i = 0; tblNombre.length > i; i++) {
+       somme = somme + tblNombre[i]
+       }
+
+       alert("Voici le(s) nombre(s) entrer: " + tblNombre)
+       alert("Voici le nombre max: " + max)
+       alert("Voici le nombre min: " + min)
+       alert("Voici la somme des nombres: " + somme)
+       alert("Voici la moyenne des nombres: " + somme / tblNombre.length)
+    </scrpit>
+  </body>
+  
+</html>
