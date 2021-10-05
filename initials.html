@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>initiales</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+  	<script type="text/javascript">
+var premier = prompt("Quelle est votre prenom?: ")
+var millieu = prompt("Quelle est votre millieu nom?: ")
+var dernier = prompt("Quelle est votre dernier nom?: ")
+var iPremier = premier.toUpperCase()[0]
+var iMillieu = millieu.toUpperCase()[0]
+var iDernier = dernier.toUpperCase()[0]
+var dernierNom = dernier.slice(1)
+	</script>
+
+</head>
+
+<body>
+
+    <h1>
+      Vos initiales sont:
+      <script type="text/javascript">
+        document.write(iPremier+iMillieu+iDernier)
+      </script>
+    </h1>
+
+    <h1>
+      Ton nom est:
+      <script type="text/javascript">
+        document.write(iPremier + premier.slice(1) + " " + iMillieu + millieu.slice(1) + " " + iDernier + dernier.slice(1))
+      </script>
+    </h1>
+
+    <h1>
+      Ton nom d'utilisateur est: 
+      <script type="text/javascript">
+        document.write(iPremier.toLowerCase() + iMillieu.toLowerCase() + iDernier.toLowerCase() + dernierNom.toLowerCase())
+      </script>
+    </h1>
+
+</body>
+
+</html>
